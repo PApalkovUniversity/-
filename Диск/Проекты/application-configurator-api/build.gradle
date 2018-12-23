@@ -1,0 +1,15 @@
+group 'ru.rti.development'
+if (hasProperty('envConfigurationPath')) {
+    logger.quiet "Applying environment configuration from : '$envConfigurationPath'"
+    apply from: envConfigurationPath
+}
+apply from: "$artifactory_contextUrl/gradle-configurations/common/common.gradle"
+dependencies {
+    internalLib group: 'ru.rti.development', name: 'application-core'
+    internalLib group: 'ru.rti.development', name: 'application-entity'
+    internalLib group: 'ru.rti.development', name: 'application-service'
+
+    internalLib group: 'ru.rti.development', name: 'application-protobuf'
+    internalLib group: 'ru.rti.development', name: 'application-protobuf-generated'
+    internalLib group: 'ru.rti.development', name: 'application-protobuf-client'
+}
