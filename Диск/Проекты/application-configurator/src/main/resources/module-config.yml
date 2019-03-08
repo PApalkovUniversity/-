@@ -1,8 +1,0 @@
-rocks:
-  db:
-    path: rocks.db
-configurator:
-  http:
-    port: 11000
-  protobuf:
-    port: 20005

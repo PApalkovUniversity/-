@@ -1,7 +1,0 @@
-package ru.rti.application.configurator.constants;
-
-public interface ConfiguratorDbConstants {
-    String APPLICATION = "APPLICATION";
-    String PROFILE_KEYS = "PROFILES";
-    String MODULE_KEYS = "MODULES";
-}
