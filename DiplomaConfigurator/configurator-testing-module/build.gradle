@@ -1,0 +1,32 @@
+group 'ru.rti.development'
+if (hasProperty('envConfigurationPath')) {
+    logger.quiet "Applying environment configuration from : '$envConfigurationPath'"
+    apply from: envConfigurationPath
+}
+buildscript {
+    repositories {
+        maven {
+            url "$artifactory_contextUrl/gradle-virtual"
+            credentials {
+                username = project.artifactory_user
+                password = project.artifactory_password
+            }
+        }
+        maven {
+            url "$artifactory_contextUrl/gradle-plugins"
+            credentials {
+                username = project.artifactory_user
+                password = project.artifactory_password
+            }
+        }
+    }
+    apply from: "$artifactory_contextUrl/gradle-configurations/gatling/gatlingPlugin.gradle"
+    dependencies {
+        gatlingPlugin()
+    }
+}
+
+apply from: "$artifactory_contextUrl/gradle-configurations/common/common.gradle"
+apply from: "$artifactory_contextUrl/gradle-configurations/gatling/gatling.gradle"
+
+adkApplication()

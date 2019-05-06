@@ -1,0 +1,13 @@
+rocks:
+  db:
+    enableTracing: true
+    path: rocks.db
+
+configurator:
+  http:
+    port: 11000
+    url: "http://localhost:11000/configurator"
+  protobuf:
+    port: 20005
+  user: "test"
+  password: "test"

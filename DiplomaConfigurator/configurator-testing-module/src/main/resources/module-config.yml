@@ -1,0 +1,17 @@
+http:
+  server:
+    port: 12001
+    path: "/configuratorTesting"
+protobuf:
+  server:
+    port: 12001
+    path: "/configuratorTesting"
+
+configurator:
+  host: "localhost"
+  port: 20005
+
+messages:
+  firstMessage: "First Initial Message"
+  secondMessage: "Second Initial Message"
+

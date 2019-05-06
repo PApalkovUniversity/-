@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9535667d-d903-4133-9d3c-db67a4fd2b47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application-configurator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/app/ConfiguratorModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorHttpClientConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorHttpServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorMetricsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorModuleConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorProtobufServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/configuration/ConfiguratorRocksDbConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/constants/ConfiguratorDbConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/constants/ConfiguratorModuleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/constants/ConfiguratorModuleExceptionMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/dao/ConfigurationSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/dao/ConfiguratorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/exceptions/ConfiguratorModuleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/factory/RemoteConfigProxyServiceSpecFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/formatter/BroadcastUrlPathFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/http/content/mapping/ConfiguratorHttpContentMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/provider/ApplicationModulesParametersProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/service/ConfiguratorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/spec/ConfiguratorServiceSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/java/ru/rti/application/configurator/spec/UserServiceSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/resources/log4j2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/resources/module-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/application/ApplicationTab.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/configuration/ConfigurationEditor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/login/LoginComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/main/MainComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/main/MainComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/modules/ModuleTab.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/profiles/ProfileTab.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/components/start/StartComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/configuration/AxiosConfiguration.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/configuration/HttpRequestConfiguration.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/constants/ConfiguratorApi.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/constants/Constants.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/constants/Routers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/services/ConfiguratorService.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-configurator/src/main/web/src/services/UserService.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/app/ConfiguratorTestingModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/configuration/ConfiguratorTestingModuleConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/constants/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/entity/ConfigMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/mapper/ConfigMessagesMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/service/ConfigurationFirstTestingModuleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/spec/ConfigurationFirstTestingModuleServiceSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/resources/log4j2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/resources/module-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/configurator-testing-module/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/app/ConfiguratorFirstTestingModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/configuration/ConfiguratorFirstTestingModuleConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/configuration/HttpServerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/configuration/ProtobufServerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/mapper/HttpContentMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/service/ConfigurationFirstTestingModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/service/ConfigurationFirstTestingModuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/spec/ConfigurationFirstTestingModuleServiceSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/java/ru/adk/configurator/first/testing/spec/ConfigurationFirstTestingModuleServiceSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurator-testing-module/src/main/resources/module-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configurator-testing-module/src/main/resources/module-config.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.23.0" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DiplomaConfigurator" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DiplomaConfigurator" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1178981315">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="/usr/local/Cellar/gradle/4.7/libexec" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.7" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="DiplomaConfigurator" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="DiplomaConfigurator" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'DiplomaConfigurator'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'DiplomaConfigurator'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'DiplomaConfigurator'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'DiplomaConfigurator'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/.gradle/gradle.properties" value="4276020493" />
+        <entry key="$PROJECT_DIR$" value="3097427992000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="DiplomaConfigurator" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-logging-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-wrapper-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-runtime-api-info-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-native-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-process-services-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-kotlin-dsl-tooling-builders-0.16.3.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-build-cache-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-core-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/groovy-all-2.4.12.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-model-core-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-base-services-groovy-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/ant-launcher-1.9.9.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-installation-beacon-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/ant-1.9.9.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-launcher-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-jvm-services-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-messaging-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-build-option-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-base-services-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-persistent-cache-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-docs-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-cli-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-tooling-api-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-kotlin-dsl-tooling-models-0.16.3.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-core-api-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-model-groovy-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-resources-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/gradle-kotlin-dsl-0.16.3.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-plugin-use-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-announce-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-tooling-api-builders-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-ide-play-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-language-scala-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-javascript-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-version-control-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-language-native-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-build-comparison-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-plugins-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-jacoco-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-platform-native-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-ide-native-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-diagnostics-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-plugin-development-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-workers-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-build-cache-http-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-testing-native-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-dependency-management-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-composite-builds-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-testing-junit-platform-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-publish-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-ear-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-language-jvm-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-platform-base-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-resources-gcs-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-ide-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-platform-play-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-resources-http-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-scala-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-language-java-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-language-groovy-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-osgi-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-reporting-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-antlr-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-code-quality-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-resources-s3-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-signing-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-resources-sftp-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-ivy-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-test-kit-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-build-init-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-testing-jvm-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-testing-base-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-platform-jvm-4.7.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="/usr/local/Cellar/gradle/4.7/libexec/lib/plugins/gradle-maven-4.7.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/ADK/b2b/crm-technograd-support" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/configurator-first-testing-module" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/crm-application" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/crm-remote-scheduler" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/development-kit" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/development-kit-jdk-6" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/maintenance-application" value="PREVIEW" />
+        <entry key="$USER_HOME$/ADK/management" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../РТИ/rti-candidate-task" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/ADK" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/ADK/application-config" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/ADK/application-protobuf-server" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/application-config-remote" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/application-configurator" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/application-rocks-db" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/development-kit" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/oem-example" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/oem-example-master" value="PREVIEW" />
+        <entry key="$USER_HOME$/OEM/oem/development-kit" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/application-configurator/src/main/web/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DiplomaConfigurator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiplomaConfigurator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9535667d-d903-4133-9d3c-db67a4fd2b47" name="Default Changelist" comment="" />
+      <created>1555752751457</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555752751457</updated>
+      <workItem from="1555752753040" duration="47000" />
+      <workItem from="1555822632311" duration="173000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="220000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32961586" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32961586" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="sbt" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/configurator-first-testing-module" />
+    </ignored-roots>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

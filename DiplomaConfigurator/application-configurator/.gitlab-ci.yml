@@ -1,0 +1,3 @@
+include:
+  - project: "management/application-management"
+    file: "module.gitlab-ci.yml"
